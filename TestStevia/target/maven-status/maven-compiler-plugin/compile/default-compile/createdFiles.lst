@@ -1,0 +1,6 @@
+com\test\stevia\SearchSteviaViaGoogle.class
+com\test\stevia\GooglePageObject.class
+com\test\stevia\AmazonPageObject.class
+com\test\stevia\BrowseAmazon.class
+com\test\stevia\AmazonPageObject$AmazonPageLocators.class
+com\test\stevia\GooglePageObject$GoogleHomePageLocators.class

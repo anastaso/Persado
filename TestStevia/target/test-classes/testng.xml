@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Stevia-Test-Suite">
+
+	<parameter name="rcHost" value="localhost" />
+	<parameter name="rcPort" value="4444" />
+	<parameter name="targetHostUrl" value="https://www.amazon.com" />
+	<parameter name="debugging" value="true" />
+	<parameter name="browser" value="chrome" />
+	<parameter name="profile" value="" />
+	<parameter name="driverType" value="webdriver" />
+	<parameter name="actionsLogging" value="true" />
+	<parameter name="tests.takeScreenshot" value="true" />
+	
+	<parameter name="dockerized" value="true"/>
+
+	<listeners>
+		<listener class-name="com.persado.oss.quality.stevia.selenium.listeners.TestListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+
+		<test name="Test Amazo using Chrome Selenium" preserve-order="true">
+			<classes>
+				<class name="com.test.stevia.BrowseAmazon" />
+			</classes>
+		</test>
+</suite>
